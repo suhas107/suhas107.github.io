@@ -681,4 +681,7 @@ a.mini:hover { transform: translateY(-6px); border-color: rgba(216, 178, 92, .55
   transition: background .3s, color .3s;
 }
 .watch:hover { background: var(--gold); color: var(--bg); }
-@media (min-width: 1101px) { .reels__grid { grid-template-columns: repeat(4, 1fr); gap: 18px; } }
+@media (min-width: 1101px) {
+  .reels__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
+  .reel { flex: 0 0 calc((100% - 54px) / 4); }
+}
