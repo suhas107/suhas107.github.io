@@ -146,6 +146,17 @@
   }, { threshold: .6 });
   $$('[data-count]').forEach(el => countIO.observe(el));
 
+  /* ---------- inline clips play only while on screen ---------- */
+  if (!reduced) {
+    const clipIO = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) en.target.play().catch(() => {});
+        else en.target.pause();
+      });
+    }, { threshold: .25 });
+    $$('.chapter__media video').forEach(v => clipIO.observe(v));
+  }
+
   /* ---------- spotlight cursor ---------- */
   if (finePointer && !reduced) {
     const spot = $('.spotlight');
