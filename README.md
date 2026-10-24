@@ -1,6 +1,6 @@
 # suhas107.github.io
 
-Personal site of **Suhas Nethi**: dancer, campus leader and full-stack developer at Amrita Vishwa Vidyapeetham, Coimbatore.
+Personal site of **Suhas Nethi**: full-stack developer and dancer at Amrita Vishwa Vidyapeetham, Coimbatore.
 
 Live at **https://suhas107.github.io**
 
