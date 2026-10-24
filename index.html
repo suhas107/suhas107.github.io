@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/img/hero.webp" imagesrcset="assets/img/hero-sm.webp 600w, assets/img/hero.webp 1200w" imagesizes="(max-width: 900px) 100vw, 50vw">
+  <link rel="preload" as="image" href="assets/video/hero-poster.webp">
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>document.documentElement.classList.add('js')</script>
@@ -51,8 +51,7 @@
   <a href="#top" class="nav__logo" aria-label="Back to top">SN<span>.</span></a>
   <nav class="nav__links" aria-label="Sections">
     <a href="#stage">Stage</a>
-    <a href="#campus">Campus</a>
-    <a href="#honours">Honours</a>
+    <a href="#journey">Journey</a>
     <a href="#work">Work</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -64,8 +63,7 @@
 
 <div class="menu" aria-hidden="true">
   <a href="#stage">On Stage</a>
-  <a href="#campus">On Campus</a>
-  <a href="#honours">Honours</a>
+  <a href="#journey">The Amrita Years</a>
   <a href="#work">The Work</a>
   <a href="#contact">Contact</a>
   <a class="menu__ig" href="https://www.instagram.com/suhas_nethi/" target="_blank" rel="noopener">@suhas_nethi</a>
@@ -76,8 +74,8 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero__media">
-      <img src="assets/img/hero.webp" srcset="assets/img/hero-sm.webp 600w, assets/img/hero.webp 1200w"
-           sizes="(max-width: 900px) 100vw, 50vw" alt="Suhas on stage at Anokha 2025, silhouetted against a wall of glowing hearts">
+      <video src="assets/video/hero.mp4" poster="assets/video/hero-poster.webp" autoplay muted loop playsinline preload="auto"
+             aria-label="Suhas dancing in a campus flashmob in front of a crowd"></video>
     </div>
     <div class="hero__copy">
       <p class="eyebrow hero__eyebrow"><span class="hide-sm">Amrita Vishwa Vidyapeetham</span><span class="show-sm">Amrita</span> <i>✦</i> Coimbatore</p>
@@ -86,7 +84,7 @@
         <span class="line"><span class="word word--outline">NETHI</span></span>
       </h1>
       <p class="hero__tag">Code by day. <em>Stage by night.</em></p>
-      <p class="hero__sub">Dancer since 2013 · Eventide Co-Head, Anokha 2026 · Class Rep ×4 · Full-stack developer</p>
+      <p class="hero__sub">Full-stack developer <i>✦</i> Dancer <i>✦</i> Campus leader</p>
       <div class="hero__cta">
         <a class="btn btn--gold" href="https://www.instagram.com/suhas_nethi/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg> Watch me dance
@@ -122,15 +120,15 @@
     </div>
     <div class="story__copy">
       <p class="eyebrow" data-reveal>01 · The story</p>
-      <h2 class="h2" data-reveal>I've been on stage since <em>2013.</em><br>Along the way I started building software.</h2>
+      <h2 class="h2" data-reveal>The stage is mine.<br><em>So is the stack.</em></h2>
       <p data-reveal>I'm Suhas, a final-year Computer Science student at Amrita Vishwa Vidyapeetham, Coimbatore. If you've been to a cultural night here, you've probably seen me dance. If you've been to an Amrita fest, I probably helped run it.</p>
       <p data-reveal>Off stage, I build secure web apps: auth, 2FA, role-based access and dashboards that real teams use every day. I'm also doing a BBA on the side because I've always cared about how teams are led, not just how code is written.</p>
       <p class="story__sign" data-reveal>Suhas Nethi</p>
     </div>
     <ul class="stats">
-      <li data-reveal><b data-count="13">13</b><sup>+</sup><span>years dancing</span></li>
       <li data-reveal><b data-count="4">4</b><span>years as Class Rep</span></li>
       <li data-reveal><b data-count="3">3</b><span>Anokha nights hosted</span></li>
+      <li data-reveal><b data-count="3">3</b><span>honours at Gokulashtami '25</span></li>
       <li data-reveal><b data-count="2">2</b><span>degrees: B.Tech + BBA</span></li>
       <li data-reveal><b data-count="11">11</b><span>projects built</span></li>
     </ul>
@@ -150,6 +148,7 @@
     <div class="reel-strip">
       <div class="reel-strip__track">
         <figure class="shot shot--tall"><img width="1800" height="1200" src="assets/img/anokha-stage.webp" srcset="assets/img/anokha-stage-sm.webp 900w, assets/img/anokha-stage.webp 1800w" sizes="(max-width: 900px) 85vw, 55vw" alt="Suhas mid-move on stage under pink lights" loading="lazy"><figcaption><b>Anokha</b> National tech fest, main stage</figcaption></figure>
+        <figure class="shot"><img width="972" height="1600" src="assets/img/thandav-solo.webp" srcset="assets/img/thandav-solo-sm.webp 600w, assets/img/thandav-solo.webp 972w" sizes="(max-width: 900px) 70vw, 28vw" alt="Suhas mid-performance at Thandav 2026" loading="lazy"><figcaption><b>Thandav 2026</b> Owning the main stage</figcaption></figure>
         <figure class="shot"><img width="1011" height="1800" src="assets/img/ugadi-2025.webp" srcset="assets/img/ugadi-2025-sm.webp 506w, assets/img/ugadi-2025.webp 1011w" sizes="(max-width: 900px) 70vw, 28vw" alt="Suhas performing at Ugadi 2025" loading="lazy"><figcaption><b>Ugadi 2025</b> Cultural coordinator and performer</figcaption></figure>
         <figure class="shot"><img width="855" height="1280" src="assets/img/flashmob.webp" srcset="assets/img/flashmob-sm.webp 601w, assets/img/flashmob.webp 855w" sizes="(max-width: 900px) 70vw, 28vw" alt="Suhas dancing in a campus flashmob" loading="lazy"><figcaption><b>Flashmobs</b> Front row since 2023</figcaption></figure>
         <figure class="shot shot--tall"><img width="1800" height="1350" src="assets/img/vit-chennai.webp" srcset="assets/img/vit-chennai-sm.webp 900w, assets/img/vit-chennai.webp 1800w" sizes="(max-width: 900px) 85vw, 45vw" alt="The Natyasudha crew on stage at VIT Chennai" loading="lazy"><figcaption><b>VIT Chennai 2026</b> Representing Amrita with Natyasudha</figcaption></figure>
@@ -166,128 +165,133 @@
         <a class="link-arrow" href="https://www.instagram.com/suhas_nethi/" target="_blank" rel="noopener" data-reveal>Follow @suhas_nethi →</a>
       </div>
       <div class="reels__grid">
-        <div class="reel" data-reel="DebJ2yMx-7P"></div>
-        <div class="reel" data-reel="Dc_NDZlzjHr"></div>
-        <div class="reel" data-reel="Dac1Z72zWdl"></div>
-        <div class="reel" data-reel="DOtBNyWiQ3V"></div>
-        <div class="reel" data-reel="DEKaJiiTYQR"></div>
-        <div class="reel" data-reel="C-SccGISv7l"></div>
+        <a class="reel" href="https://www.instagram.com/reel/DebJ2yMx-7P/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/reels/DebJ2yMx-7P.webp" width="540" height="960" alt="Campus flashmob on the red carpet" loading="lazy">
+          <span class="reel__play" aria-hidden="true"></span>
+          <span class="reel__cap"><b>Flashmob</b>Watch on Instagram</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/Dc_NDZlzjHr/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/reels/Dc_NDZlzjHr.webp" width="540" height="960" alt="The Thandav crew" loading="lazy">
+          <span class="reel__play" aria-hidden="true"></span>
+          <span class="reel__cap"><b>Thandav</b>Watch on Instagram</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/Dac1Z72zWdl/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/reels/Dac1Z72zWdl.webp" width="540" height="960" alt="Couple dance shoot on campus" loading="lazy">
+          <span class="reel__play" aria-hidden="true"></span>
+          <span class="reel__cap"><b>Campus shoot</b>Watch on Instagram</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DOtBNyWiQ3V/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/reels/DOtBNyWiQ3V.webp" width="540" height="960" alt="Duet on the campus road" loading="lazy">
+          <span class="reel__play" aria-hidden="true"></span>
+          <span class="reel__cap"><b>The lift</b>Watch on Instagram</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DEKaJiiTYQR/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/reels/DEKaJiiTYQR.webp" width="540" height="960" alt="Silhouette dance shoot at night" loading="lazy">
+          <span class="reel__play" aria-hidden="true"></span>
+          <span class="reel__cap"><b>After dark</b>Watch on Instagram</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/C-SccGISv7l/" target="_blank" rel="noopener" data-reveal>
+          <img src="assets/img/reels/C-SccGISv7l.webp" width="540" height="960" alt="Group shoot on the campus steps" loading="lazy">
+          <span class="reel__play" aria-hidden="true"></span>
+          <span class="reel__cap"><b>The steps</b>Watch on Instagram</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ON CAMPUS -->
-  <section class="campus section" id="campus">
-    <p class="eyebrow" data-reveal>03 · On campus</p>
-    <h2 class="display" data-reveal>Running<br><em>the show.</em></h2>
-    <p class="lead" data-reveal>Fests, cultural nights, classrooms and first-year orientations. If something big was happening at Amrita, I was usually somewhere in the middle of it.</p>
+  <!-- THE AMRITA YEARS -->
+  <section class="years section" id="journey">
+    <p class="eyebrow" data-reveal>03 · The Amrita years</p>
+    <h2 class="display" data-reveal>Four years.<br><em>One campus.</em></h2>
+    <p class="lead" data-reveal>From first-year flashmobs to running Anokha's cultural night. If something big was happening at Amrita, I was usually somewhere in the middle of it.</p>
 
-    <div class="bento">
-      <article class="card card--hero" data-reveal>
-        <img src="assets/img/anokha-stage-sm.webp" alt="" loading="lazy" aria-hidden="true">
-        <div class="card__body">
-          <span class="card__kicker">Anokha 2026 · National tech fest</span>
-          <h3>Co-Head, Eventide</h3>
-          <p>Ran the cultural night of Anokha, Amrita's national tech fest, for a packed house. I hosted three nights: <strong>Eventide</strong>, the pro show <strong>Raaga Night</strong> and <strong>Natya Night</strong>. Got a certificate of appreciation as student coordinator.</p>
+    <ul class="titles">
+      <li data-reveal><span>Anokha 2026</span><b>Co-Head, Eventide</b></li>
+      <li data-reveal><span>B.Tech CSE · 4 years</span><b>Class Rep</b></li>
+      <li data-reveal><span>Natyasudha</span><b>Head of Social Media</b></li>
+      <li data-reveal><span>SoC Newsletter</span><b>Clubs Editor</b></li>
+    </ul>
+
+    <div class="chapters">
+      <article class="chapter" data-year="01">
+        <div class="chapter__media" data-reveal="clip">
+          <img src="assets/img/flashmob-sm.webp" width="601" height="900" alt="Suhas dancing in a campus flashmob" loading="lazy">
+        </div>
+        <div class="chapter__body">
+          <span class="chapter__when" data-reveal>Year 01 · 2023–24</span>
+          <h3 data-reveal>Walking in</h3>
+          <p class="chapter__line" data-reveal>New campus, new crew, first flashmob.</p>
+          <ul class="moments">
+            <li data-reveal>Joined B.Tech Computer Science at Amrita, Coimbatore</li>
+            <li data-reveal>Became Class Rep, a role I've held every year since</li>
+            <li data-reveal>Joined <b>Natyasudha</b> and took over the club's social media</li>
+            <li data-reveal>Front row in campus flashmobs from the first semester</li>
+          </ul>
         </div>
       </article>
 
-      <article class="card card--photo" data-reveal>
-        <img src="assets/img/gokulashtami-trophy-sm.webp" alt="Suhas kissing the Gokulashtami winners' trophy" loading="lazy">
-        <div class="card__body">
-          <span class="card__kicker">Gokulashtami 2025</span>
-          <h3>Led CSE to the title</h3>
-          <p>As cultural coordinator, I led CSE to the win and was named <strong>Best Cultural Coordinator</strong> by the Office of Student Affairs.</p>
+      <article class="chapter chapter--flip" data-year="02">
+        <div class="chapter__media chapter__media--duo" data-reveal="clip">
+          <img src="assets/img/hero-sm.webp" width="600" height="900" alt="Suhas silhouetted against glowing hearts on the Anokha 2025 stage" loading="lazy">
+          <img src="assets/img/ugadi-2025-sm.webp" width="506" height="900" alt="Suhas performing at Ugadi 2025" loading="lazy">
+        </div>
+        <div class="chapter__body">
+          <span class="chapter__when" data-reveal>Year 02 · 2024–25</span>
+          <h3 data-reveal>Finding the stage</h3>
+          <p class="chapter__line" data-reveal>A second degree, a newsroom and a first trophy.</p>
+          <ul class="moments">
+            <li class="win" data-reveal><em class="badge">2nd</em><span>Solo dance prize at <b>Pragathi 2024</b>, Amrita School of Business</span></li>
+            <li data-reveal>Started a <b>BBA</b> at Osmania University alongside B.Tech</li>
+            <li data-reveal>Joined the School of Computing newsletter as clubs editor</li>
+            <li data-reveal>Cultural coordinator for <b>Ugadi 2025</b></li>
+            <li data-reveal>Danced on the main stage at <b>Anokha 2025</b></li>
+          </ul>
         </div>
       </article>
 
-      <article class="card card--photo" data-reveal>
-        <img src="assets/img/semi-classical-sm.webp" alt="Suhas holding the semi-classical trophy and certificate" loading="lazy">
-        <div class="card__body">
-          <span class="card__kicker">Gokulashtami 2025 · Semi-classical</span>
-          <h3>First all-male team to place</h3>
-          <p>I led the first all-male team ever to place in semi-classical. We came home 2nd runner-up.</p>
+      <article class="chapter" data-year="03">
+        <div class="chapter__media chapter__media--duo" data-reveal="clip">
+          <img src="assets/img/gokulashtami-trophy-sm.webp" width="675" height="900" alt="Suhas kissing the Gokulashtami winners' trophy" loading="lazy">
+          <img src="assets/img/semi-classical-sm.webp" width="506" height="900" alt="Suhas with the semi-classical trophy and certificate" loading="lazy">
+        </div>
+        <div class="chapter__body">
+          <span class="chapter__when" data-reveal>Year 03 · 2025–26</span>
+          <h3 data-reveal>The big one</h3>
+          <p class="chapter__line" data-reveal>The year everything landed.</p>
+          <ul class="moments">
+            <li class="win" data-reveal><em class="badge">Won</em><span><b>Gokulashtami 2025</b>: led CSE to the title as cultural coordinator</span></li>
+            <li class="win" data-reveal><em class="badge">Award</em><span><b>Best Cultural Coordinator</b>, Office of Student Affairs</span></li>
+            <li class="win" data-reveal><em class="badge">3rd</em><span>Semi-classical 2nd runner-up: the <b>first all-male team</b> ever to place</span></li>
+            <li class="win" data-reveal><em class="badge">Head</em><span><b>Co-Head of Eventide, Anokha 2026</b>: hosted Eventide, Raaga Night and Natya Night, with a certificate of appreciation</span></li>
+            <li data-reveal>On stage at <b>Thandav</b> and <b>Ugadi 2026</b>; represented Amrita at <b>VIT Chennai</b></li>
+            <li data-reveal>Summer internship at <b>ICAR-IIRR</b>, Hyderabad</li>
+          </ul>
         </div>
       </article>
 
-      <article class="card card--photo card--wide" data-reveal>
-        <img src="assets/img/class-photo-sm.webp" alt="The CSE batch class photo, seventh semester" loading="lazy">
-        <div class="card__body">
-          <span class="card__kicker">B.Tech CSE · 2023 to 2027</span>
-          <h3>Class Rep, all four years</h3>
-          <p>Represented my batch every year from day one to final year.</p>
+      <article class="chapter chapter--flip" data-year="04">
+        <div class="chapter__media chapter__media--duo" data-reveal="clip">
+          <img src="assets/img/first-years-sm.webp" width="900" height="675" alt="Suhas speaking to first-year students on stage" loading="lazy">
+          <img src="assets/img/class-photo-sm.webp" width="900" height="600" alt="The CSE batch class photo in seventh semester" loading="lazy">
         </div>
-      </article>
-
-      <article class="card card--photo" data-reveal>
-        <img src="assets/img/first-years-sm.webp" alt="Suhas speaking to first-year students on stage" loading="lazy">
-        <div class="card__body">
-          <span class="card__kicker">Orientation</span>
-          <h3>The voice for first-years</h3>
-          <p>Invited to talk to incoming students about clubs, cultural life and making the most of campus.</p>
+        <div class="chapter__body">
+          <span class="chapter__when" data-reveal>Year 04 · 2026–27</span>
+          <h3 data-reveal>Final act</h3>
+          <p class="chapter__line" data-reveal>Passing it on.</p>
+          <ul class="moments">
+            <li data-reveal>Invited to speak to the new first-years about clubs, culture and campus life</li>
+            <li class="win" data-reveal><em class="badge">Tech</em><span><b>Radius</b> shortlisted at the Cognizant NPN GCP Hackathon</span></li>
+            <li data-reveal>Class Rep for the fourth year running</li>
+            <li data-reveal>Graduating in 2027 and looking for the team I build with next</li>
+          </ul>
         </div>
-      </article>
-
-      <article class="card card--text" data-reveal>
-        <span class="card__kicker">Ugadi</span>
-        <h3>Cultural coordinator</h3>
-        <p>Coordinated the Ugadi cultural programme and performed on the same stage.</p>
-      </article>
-
-      <article class="card card--text" data-reveal>
-        <span class="card__kicker">Natyasudha</span>
-        <h3>Head of social media</h3>
-        <p>Grew the dance club's page from a few thousand views into a real campus following.</p>
-      </article>
-
-      <article class="card card--text" data-reveal>
-        <span class="card__kicker">School of Computing</span>
-        <h3>Clubs editor, newsletter</h3>
-        <p>Covered every club on campus for the School of Computing newsletter.</p>
-      </article>
-
-      <article class="card card--text" data-reveal>
-        <span class="card__kicker">Amritotsavam</span>
-        <h3>Face of the trailer</h3>
-        <p>Starred in the official trailer for one of Amrita's fests.</p>
       </article>
     </div>
   </section>
 
-  <!-- JOURNEY -->
-  <section class="journey section">
-    <p class="eyebrow" data-reveal>04 · The journey</p>
-    <h2 class="h2" data-reveal>How it all <em>happened.</em></h2>
-    <ol class="timeline">
-      <li data-reveal><time>2013</time><div><h4>First stage</h4><p>Started dancing. Never stopped.</p></div></li>
-      <li data-reveal><time>2019</time><div><h4>State-level 2nd prize</h4><p>Chukka Lakshmibayamma Telangana State Science Talent Search.</p></div></li>
-      <li data-reveal><time>2023</time><div><h4>Joined Amrita, Coimbatore</h4><p>B.Tech CSE. Joined Natyasudha. Elected Class Rep.</p></div></li>
-      <li data-reveal><time>2024</time><div><h4>BBA + first trophy at Amrita</h4><p>Started a BBA at Osmania University. Solo 2nd prize at Pragathi. Joined the newsletter board.</p></div></li>
-      <li data-reveal><time>2025</time><div><h4>The cultural year</h4><p>Ugadi coordinator. Won Gokulashtami with CSE. Best Cultural Coordinator. Danced on the main stage at Anokha.</p></div></li>
-      <li data-reveal><time>2026</time><div><h4>Builder and headliner</h4><p>Intern at ICAR-IIRR. Eventide Co-Head at Anokha. Thandav. VIT Chennai. Radius shortlisted at the Cognizant GCP hackathon.</p></div></li>
-      <li data-reveal class="is-next"><time>2027</time><div><h4>What's next</h4><p>Graduating, and looking for the team I'll build with next.</p></div></li>
-    </ol>
-  </section>
-
-  <!-- HONOURS -->
-  <section class="honours section" id="honours">
-    <p class="eyebrow" data-reveal>05 · Honours</p>
-    <h2 class="display" data-reveal>The trophy<br><em>shelf.</em></h2>
-    <ul class="shelf">
-      <li data-reveal><span class="shelf__yr">2025</span><span class="shelf__what"><b>Best Cultural Coordinator</b>Gokulashtami · Office of Student Affairs</span><span class="shelf__tag">Award</span></li>
-      <li data-reveal><span class="shelf__yr">2025</span><span class="shelf__what"><b>Winners, Gokulashtami</b>Led CSE as cultural coordinator</span><span class="shelf__tag">1st</span></li>
-      <li data-reveal><span class="shelf__yr">2025</span><span class="shelf__what"><b>2nd Runner-up, Semi-classical</b>First all-male team ever to place</span><span class="shelf__tag">3rd</span></li>
-      <li data-reveal><span class="shelf__yr">2026</span><span class="shelf__what"><b>Certificate of Appreciation</b>Student coordinator, Anokha 2026</span><span class="shelf__tag">Award</span></li>
-      <li data-reveal><span class="shelf__yr">2026</span><span class="shelf__what"><b>Shortlisted, Cognizant NPN GCP Hackathon</b>Radius, built on Google Cloud</span><span class="shelf__tag">Tech</span></li>
-      <li data-reveal><span class="shelf__yr">2024</span><span class="shelf__what"><b>2nd Prize, Solo Dance</b>Pragathi, Amrita School of Business</span><span class="shelf__tag">2nd</span></li>
-      <li data-reveal><span class="shelf__yr">—</span><span class="shelf__what"><b>Winners, T10 Cricket</b>Sports Authority of Telangana State</span><span class="shelf__tag">1st</span></li>
-      <li data-reveal><span class="shelf__yr">2019</span><span class="shelf__what"><b>2nd Prize, Science Talent Search</b>Telangana state level</span><span class="shelf__tag">2nd</span></li>
-    </ul>
-  </section>
-
   <!-- WORK -->
   <section class="work section" id="work">
-    <p class="eyebrow" data-reveal>06 · The work</p>
+    <p class="eyebrow" data-reveal>04 · The work</p>
     <h2 class="display" data-reveal>The builder<br><em>side.</em></h2>
     <p class="lead" data-reveal>Secure, practical software. Most of it is in daily use, at a national research institute or by the people I built it for.</p>
 
@@ -408,7 +412,7 @@
 
   <!-- CONTACT -->
   <section class="contact section" id="contact">
-    <p class="eyebrow" data-reveal>07 · Contact</p>
+    <p class="eyebrow" data-reveal>05 · Contact</p>
     <h2 class="contact__big" data-reveal>Let's<br><em>talk.</em></h2>
     <p class="lead" data-reveal>Hiring, collaborating, or putting a team on stage? I'm in.</p>
     <a class="contact__mail" href="mailto:suhasnethi107@gmail.com" data-reveal>suhasnethi107@gmail.com</a>
@@ -437,5 +441,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
 <script src="assets/js/main.js" defer></script>
+<script data-goatcounter="https://suhas107.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

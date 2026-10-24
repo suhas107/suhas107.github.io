@@ -15,12 +15,12 @@
   if (hasGsap && !reduced) {
     gsap.set('.hero__name .word', { yPercent: 115 });
     gsap.set(heroBits, { opacity: 0, y: 26 });
-    gsap.set('.hero__media img', { scale: 1.25, opacity: 0 });
+    gsap.set('.hero__media video', { scale: 1.25, opacity: 0 });
   }
   const playHero = () => {
     if (!hasGsap || reduced) return;
     const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
-    tl.to('.hero__media img', { scale: 1, opacity: 1, duration: 2.2, ease: 'power2.out' }, 0)
+    tl.to('.hero__media video', { scale: 1, opacity: 1, duration: 2.2, ease: 'power2.out' }, 0)
       .to('.hero__name .word', { yPercent: 0, duration: 1.3, stagger: .14 }, .15)
       .to(heroBits, { opacity: 1, y: 0, duration: 1, stagger: .09 }, .6);
   };
@@ -43,9 +43,10 @@
       setTimeout(() => curtain.classList.add('is-gone'), 1400);
     }, wait);
   };
-  const heroImg = $('.hero__media img');
-  if (heroImg.complete) openCurtain();
-  else { heroImg.addEventListener('load', openCurtain, { once: true }); heroImg.addEventListener('error', openCurtain, { once: true }); }
+  const heroVideo = $('.hero__media video');
+  if (reduced) { heroVideo.removeAttribute('autoplay'); heroVideo.pause(); }
+  if (heroVideo.readyState >= 2) openCurtain();
+  else { heroVideo.addEventListener('loadeddata', openCurtain, { once: true }); heroVideo.addEventListener('error', openCurtain, { once: true }); }
   setTimeout(openCurtain, 2600);
 
   /* ---------- smooth scroll ---------- */
@@ -145,29 +146,6 @@
   }, { threshold: .6 });
   $$('[data-count]').forEach(el => countIO.observe(el));
 
-  /* ---------- Instagram reels (load when near view) ---------- */
-  const reels = $$('.reel');
-  reels.forEach(r => {
-    const url = `https://www.instagram.com/reel/${r.dataset.reel}/`;
-    r.innerHTML = `<a class="reel__ph" href="${url}" target="_blank" rel="noopener"><span>Watch on Instagram</span></a>`;
-  });
-  const reelIO = new IntersectionObserver(entries => {
-    entries.forEach(en => {
-      if (!en.isIntersecting) return;
-      const r = en.target;
-      reelIO.unobserve(r);
-      const f = document.createElement('iframe');
-      f.src = `https://www.instagram.com/reel/${r.dataset.reel}/embed/`;
-      f.title = 'Instagram reel by @suhas_nethi';
-      f.loading = 'lazy';
-      f.allow = 'autoplay; encrypted-media; picture-in-picture';
-      f.setAttribute('scrolling', 'no');
-      f.addEventListener('load', () => setTimeout(() => r.classList.add('is-loaded'), 600), { once: true });
-      r.appendChild(f);
-    });
-  }, { rootMargin: '600px 0px' });
-  reels.forEach(r => reelIO.observe(r));
-
   /* ---------- spotlight cursor ---------- */
   if (finePointer && !reduced) {
     const spot = $('.spotlight');
@@ -198,7 +176,7 @@
 
   /* ---------- scroll-driven scenes ---------- */
   if (hasST && !reduced) {
-    gsap.to('.hero__media img', {
+    gsap.to('.hero__media video', {
       yPercent: 10, ease: 'none',
       scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
     });
